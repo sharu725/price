@@ -177,3 +177,7 @@ body {
 .business .pt-footer:after {	
 	border-top-color: #FFFFFF;	
 }
+p {
+
+   text-transform: none;
+}
