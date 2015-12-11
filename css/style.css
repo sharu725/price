@@ -59,7 +59,7 @@ body {
     margin-bottom: 4rem;
 }
 .block{
-    width: 40%;    
+    width: 30%;    
     margin: 0 15px;
     overflow: hidden;
     -webkit-border-radius: 5px;
@@ -77,7 +77,7 @@ body {
 .content{
     position: relative;
     color: #FEFEFE;
-    padding: 20px 0 10px 0;
+    padding:15px 0 10px 0;
 }
 /*arrow creation*/
 .content:after, .content:before,.pt-footer:before,.pt-footer:after {
