@@ -59,7 +59,7 @@ body {
     margin-bottom: 4rem;
 }
 .block{
-    width: 30%;    
+    width: 40%;    
     margin: 0 15px;
     overflow: hidden;
     -webkit-border-radius: 5px;
@@ -105,7 +105,7 @@ body {
     margin-bottom: 0.625rem;
 }
 .price span{    
-    font-size: 1rem;
+    font-size: 2rem;
     letter-spacing: 8px;
     font-weight: bold;        
 }
