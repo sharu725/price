@@ -49,7 +49,7 @@ body {
     padding-right: 0;
 }
 .pricing-table .heading{
-    color: #313131;
+    color: #999;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.3rem;
@@ -58,7 +58,7 @@ body {
 
 .description{
     
-    color: #313131;
+    color: #999;
     margin-bottom:3rem;
 }
 
