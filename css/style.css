@@ -145,10 +145,10 @@ body {
 }
 /*PERSONAL*/
 .personal .title{        
-    background: #26A65B;    
+    background: #2FCC71;    
 }
 .personal .content,.personal .pt-footer{
-    background: #2ECC71;
+    background: #2ECC71; 
 }
 .personal .content:after{	
 	border-top-color: #2ECC71;	
