@@ -115,19 +115,27 @@
     </div>
     </section>
       
+      
+      
+      
+      
+      <!--Contact us 
+===========================================================================================================================================
+-->
+      
       <section id="contact">
-       <h1 class="title">Contact Us</h1>
+       <h1 class="contit">Contact Us</h1>
     <form id="form" class="form" action="http://formspree.io/info@dxartist.com" method="POST">
-        <ul>
-            <li>
+        <ul id="unol">
+            <li class="list">
                 <label for="name">Your Name:</label>
                 <input type="text" placeholder="" id="name" name="name" tabindex="1"/>
             </li>
-            <li>
+            <li class="list">
                 <label for="email">Your Email:</label>
                 <input type="email" placeholder="" id="email" name="_replyto" tabindex="2"/>
             </li>
-            <li>
+            <li class="list">
                 <label for="message">Message:</label>
                 <textarea placeholder="" id="message" name="message" tabindex="3"></textarea>
             </li>
@@ -141,9 +149,13 @@
         
     </form>
 </section>
-      <style>
+    
       
-      <style>
+      
+      
+        <style>
+      
+
 @import "http://compass-style.org/reference/compass/css3/";
 
 *,*:after,*:before{
@@ -158,21 +170,22 @@ body{
  
 }
 
-section{
+#contact {
 max-width:25em;
 margin:0 auto;
   
 }
 
-ul{
+#unol {
 margin:0;
   padding: 0;
   list-style-type:none;
 }
-li{
+.list{
 position: relative;
 }
-h1{
+            
+.contit{
 display:block;
 text-align: center;
 background: #323A45;
@@ -255,7 +268,11 @@ color:#f1773b;
       
       </style>
       
-      </section>
+      
+      
+      
+      
+      
       
       
       
