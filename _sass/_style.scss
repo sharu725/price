@@ -13,12 +13,20 @@ Inspired by the dribble shot http://dribbble.com/shots/1285240-Freebie-Flat-Pric
     font: inherit;
     vertical-align: baseline;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+
+
 /*------ utiltity classes -----*/
-.fl{ float:left; }
-.fr{ float: right; }
+.fl{ float:left; 
+    @include media-query($on-palm) {
+        float: none;
+    }
+}
+.fr{ float: right; @include media-query($on-palm) {
+        float: none;
+    }}
 /*its also known as clearfix*/
 .group:before,
 .group:after {
@@ -28,15 +36,16 @@ Inspired by the dribble shot http://dribbble.com/shots/1285240-Freebie-Flat-Pric
 .group:after {
     clear: both;
 }
-.group {
-    zoom: 1;  /*For IE 6/7 (trigger hasLayout) */
+/* .group {
+    zoom: 1;  For IE 6/7 (trigger hasLayout)
 }
-
+ */
 body {
     background: #ECECEC;
     font-family: 'Droid Sans', sans-serif;
     line-height: 1;
-    font-size: 16px;    
+    font-size: 16px;   
+    overflow-x: hidden;
 }
 .wrapper {
     
@@ -47,6 +56,10 @@ body {
     text-align: center;
     padding: 10px;
     padding-right: 0;
+    @include media-query($on-palm) {
+        width: 100%;
+        padding: 10px;
+    } 
 }
 .pricing-table .heading{
     color: #888888;
@@ -59,7 +72,7 @@ body {
 .description{
     
     color: #999;
-      line-height: 150%;
+    line-height: 150%;
     margin-bottom:2.5rem;
 }
 
@@ -67,10 +80,11 @@ body {
     width: 26%;   
     margin: auto 30px;
     overflow: hidden;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;    
-/*    border: 1px solid red;*/
+    @include media-query($on-palm) {
+        width: 100%;
+        margin: 20px 0px;
+    } 
 }
 /*Shared properties*/
 .title,.pt-footer{
@@ -191,7 +205,32 @@ a {
 
 #contact {
     
-    width:600px;
+    width:400px;
     margin: 0 auto;
+
+}
+
+.btn {
+  display:block;
+  background: #2ecc71;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 1em;
+  color:white;
+  text-transform: uppercase;
+  cursor:pointer;
+  text-align: center;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+.btn:hover {
+    background: #4ae08a;
+}
+
+
+*,*:after,*:before{
+-webkit-box-sizing:border-box;
+-ms-box-sizing:border-box;
+box-sizing:border-box;
 
 }
